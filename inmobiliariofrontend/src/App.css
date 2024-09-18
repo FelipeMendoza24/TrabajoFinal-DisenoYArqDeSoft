@@ -1,0 +1,159 @@
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f9;
+  height: calc(100vh - 60px); /* Subtract the height of the AppBar */
+  font-family: 'Arial', sans-serif;
+}
+
+/* AppBar styling */
+.app-bar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side (Form) styling */
+.left-side {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%; /* Reduced the width */
+}
+
+.left-side h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 120px 1fr; /* Reduced label width */
+  gap: 10px;
+  align-items: center;
+}
+
+form label {
+  justify-self: end;
+  color: #34495e;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  background-color: #ecf0f1;
+}
+
+button {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Right side (Table) styling */
+.right-side {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 65%; /* Expanded width to fit the table better */
+}
+
+.right-side h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8f9fa;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #dff9fb;
+}
+
+/* Center everything inside the container */
+.app-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  background-color: #ecf0f1;
+  color: #34495e;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none; /* Remove default select arrow for WebKit */
+  -moz-appearance: none; /* Remove default select arrow for Firefox */
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #eaf2f8;
+}
+
+/* Add a custom arrow to the select dropdown */
+select::-ms-expand {
+  display: none; /* Hide the default arrow in Internet Explorer */
+}
+
+select:after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #34495e;
+}
+
+form label {
+  justify-self: end;
+  color: #34495e;
+  font-weight: bold;
+}
+
