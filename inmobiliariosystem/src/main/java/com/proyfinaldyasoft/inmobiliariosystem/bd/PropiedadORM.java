@@ -1,12 +1,14 @@
 package com.proyfinaldyasoft.inmobiliariosystem.bd;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Table(name = "propiedad")
 @Entity
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 public class PropiedadORM {
 
