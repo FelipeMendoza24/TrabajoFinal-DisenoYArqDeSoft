@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
+@CrossOrigin
 public class PropiedadController {
 
     private PropiedadJPA propiedadJPA;
